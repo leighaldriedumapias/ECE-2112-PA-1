@@ -69,7 +69,12 @@ print(make_username("Leigh","Aldrie"))
 
 ## 3. Bookend Swap Problem
 
+Objective:
 
+To create a function named swap_bookends() that accepts a list containing at least two elements. Unpack the list into three variables:
 
+• first – the first element;
+• middle – a list containing everything between the first and last elements; and
+• last – the last element.
 
 
