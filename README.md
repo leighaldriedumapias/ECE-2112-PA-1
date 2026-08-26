@@ -18,4 +18,9 @@ Key Components:
 
 • `return text[1:] + text[0]` - the two is combined by "+" that will put character of index position zero at last without changing others' position, then `return` will give out the output.
 
+The final output is built as follows: 
+```def rotate_word(text):           
+    
+    return text[1:] + text[0]
 
+  print(rotate_word("Python"))```    
