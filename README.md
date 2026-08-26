@@ -25,5 +25,5 @@ def rotate_word(text):
     
     return text[1:] + text[0]
 
-  print(rotate_word("Python"))
+print(rotate_word("Python"))
 ```    
