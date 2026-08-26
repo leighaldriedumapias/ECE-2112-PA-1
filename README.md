@@ -4,7 +4,7 @@ This repository contains the Programming Assignment 1 assigned for ECE2112 - Adv
 
 ## 1. Word Rotation Problem
 
-Objectives:
+Objective:
 
 To create a function named "rotate_word()" that accepts a non-empty string value and moves the first character of the string in the end while keeping the other elements in place. Capitalization of every character must also be preserved. String indexing or slicing must be utilized to construct the returned string.
 
@@ -26,4 +26,50 @@ def rotate_word(text):
     return text[1:] + text[0]
 
 print(rotate_word("Python"))
-```    
+```
+
+## 2. Username Builder Problem
+
+Objective:
+
+To create a function named make_username() that accepts two strings: first name and last name. The
+function must convert all letters to lowercase, remove all spaces from the first name and last name. Then, the processed first and last names must be joined together using one period (.).
+
+Key Components:
+
+• `def make_username(first_name, last_name):` - a user-defined function, the included `first_name, last_name` acts as a placeholder for whatever string that it is passed into the function.
+
+• `lowercase_first = first_name.lower()` - the `first_name.lower()` has the built-in process `.lower()` that converts all the elements placed in the `first_name` to lowercase, and then stores the new value to the placeholder `lowercase_last`.
+
+• `final_first = lowercase_first.replace(" ","")` - the `lowercase_first.replace(" ", "")` has the built-in process `.replace()`, in this case, coded to be `.replace(" ","")` that helps in replacing certain elements in the input. Inside the parenthesis, the first one between the double quotation mark is a space, that means the process will search for spaces in the value placed in `lowercase_first`, then, the second part inside the parenthesis, that is also enclosed by double quotation mark have no space, which is the condition that will replace the scanned spaces in the first one, resulting to removal of any space. Then, after this process, it will store the result value in the placeholder `final_first`.
+
+• `lowercase_last = last_name.lower()` - the `last_name.lower()` has the built-in process `.lower()` that converts all the elements placed in the `last_name` to lowercase, and then stores the new value to the placeholder `lowercase_last`.
+
+• `final_last = lowercase_last.replace(" ","")` - the `lowercase_last.replace(" ", "")` has the built-in process `.replace()`, in this case, coded to be `.replace(" ","")` that helps in replacing certain elements in the input. Inside the parenthesis, the first one between the double quotation mark is a space, that means the process will search for spaces in the value placed in `lowercase_last`, then, the second part inside the parenthesis, that is also enclosed by double quotation mark have no space, which is the condition that will replace the scanned spaces in the first one, resulting to removal of any space. Then, after this process, it will store the result value in the placeholder `final_last`.
+
+• `return final_first + "." + final_last` - the stored values in `final_first` and `final_last` will be joint together by operation "+", then between them a period is also place with `"."`. Then `return` will give out the output.
+
+The final output is built as follows:
+
+```python
+def make_username(first_name, last_name):
+
+    lowercase_first = first_name.lower()
+
+    final_first = lowercase_first.replace(" ","")
+
+    lowercase_last = last_name.lower()
+
+    final_last = lowercase_last.replace(" ","")
+
+    return final_first + "." + final_last
+
+print(make_username("Leigh","Aldrie"))
+```
+
+## 3. Bookend Swap Problem
+
+
+
+
+
