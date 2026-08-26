@@ -74,7 +74,41 @@ Objective:
 To create a function named swap_bookends() that accepts a list containing at least two elements. Unpack the list into three variables:
 
 • first – the first element;
+
 • middle – a list containing everything between the first and last elements; and
+
 • last – the last element.
 
+Using these variables, return a new list in which the first and last elements have exchanged positions. The elements in middle must remain in their original order.
 
+Key Components:
+
+• `def swap_bookends(items):` - creates a user-defined function, the "items" is an input passed in the function, which is expected to be a list containing at least two elements.
+
+• `first, *middle, last = items` 
+
+- "first" takes the first element in "items" list and stores it in the variable
+  
+- "*middle" possessing an asterisk to capture all the remaining elements in between the first and last elements of the "items" list, grouping it in a new list
+  
+- "last" takes the last element in "items" list and stores it in the variable
+
+• `return [last] + middle + [first]`
+
+- [last] wraps the single last elements to be a list
+  
+- [first] wraps the single first element to be a list
+
+- middle joins both the "last" and the "first" list with the help "+". Does not need to be put in a squared bracket because it already declared to be a list in the previous line of code. The newly constructed list is then returned by `return`.
+
+The final output is built as follows:
+
+```python
+def swap_bookends(items):
+
+    first, *middle, last = items
+
+    return [last] + middle + [first]
+    
+swap_bookends([1, 2, 3, 4, 5])
+```
