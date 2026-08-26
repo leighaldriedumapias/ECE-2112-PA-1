@@ -20,7 +20,7 @@ Key Components:
 
 The final output is built as follows: 
 
-```
+```python
 def rotate_word(text):
     
     return text[1:] + text[0]
