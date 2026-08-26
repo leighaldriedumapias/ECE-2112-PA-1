@@ -117,4 +117,4 @@ To see the main python program for Programming Assignment 1, the link is given b
 
 ## README File Version History:
 
-August 27, 2025 - Initial README output uploaded; 
+August 27, 2025 - Initial README output uploaded; also format and details tweaks
