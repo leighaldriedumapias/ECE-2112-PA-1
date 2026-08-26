@@ -113,4 +113,8 @@ def swap_bookends(items):
 swap_bookends([1, 2, 3, 4, 5])
 ```
 
-To see the main python program for Programming Assignment 1, the link is given by 
+To see the main python program for Programming Assignment 1, the link is given by https://github.com/leighaldriedumapias/ECE-2112-PA-1/blob/master/Programming%20Assignment%201.ipynb and download. Open on Jupyter Notebook, then run all cells.
+
+## README File Version History:
+
+August 27, 2025 - Initial README output uploaded; 
