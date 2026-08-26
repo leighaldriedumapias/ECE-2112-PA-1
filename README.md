@@ -11,6 +11,8 @@ To create a function named "rotate_word()" that accepts a non-empty string value
 Key Components:
 
 • `def rotate_word(text):` - a user-defined function, the included `text` acts as a placeholder for whatever string that it is passed into the function.
-
+• `text[1:]` - a built-in process that that slices the characters of the string from the index position 1 all the way to the last.
+• `text[0]` - a built-in process that only gets the character from the index position zero
+• `return text[1:] + text[0]` - the two is combined by "+" that will put character of index position zero at last without changing others' position, then `return` will give out the output.
 
 
